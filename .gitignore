@@ -1,0 +1,12 @@
+__pycache__
+.idea
+*.pyc
+Pyicacls.egg-info
+.pytest_cache
+.mypy_cache
+pyicacls/.mypy_cache
+build
+dist
+venv
+pyicacls/__pycache__
+pyicacls/examples/__pycache__
