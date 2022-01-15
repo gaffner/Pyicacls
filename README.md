@@ -3,7 +3,7 @@ A package for simple Windows ACL management, much like the windows icacls binary
 This package can run both on UNIX machines and Windows machines.
 
 ## How to use?
-For regular IT purposes you can use the script attached in the *example* folder.
+For regular IT purposes you can use the script attached in the *pyicacls/example* folder.
 
 ```
 python examples/icacls.py -h
