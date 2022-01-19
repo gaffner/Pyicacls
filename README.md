@@ -1,5 +1,5 @@
 # Pyicacls
-A package for simple Windows ACL management, much like the windows icacls binary.
+A package for Windows ACL management, much like the windows icacls binary.
 This package can run both on UNIX machines and Windows machines.
 
 ## How to use?
