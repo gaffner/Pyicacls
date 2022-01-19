@@ -28,7 +28,7 @@ optional arguments:
 For creating automated scripts and other advanced tasks you can use the *PermissionsGetter* and *PermissionsSetter*.
 
 ### To view permissions
-```
+```python
 from pyicacls.getter import PermissionsGetter
 s = PermissionsGetter('127.0.0.1', 'MyPc', 'MyUsername', 'MyPassword', 'MyDomain')
 
