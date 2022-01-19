@@ -5,7 +5,7 @@ This package can run both on UNIX machines and Windows machines.
 ## How to use?
 For regular IT purposes you can use the script attached in the *pyicacls/example* folder.
 
-```
+```bash
 python examples/icacls.py -h
 usage: icacls.py [-h] --ip IP --user USER [--password PASSWORD] [--domain DOMAIN] [--share SHARE] --file-path FILE_PATH [--target-user TARGET_USER]
                  [--permissions PERMISSIONS]
@@ -35,7 +35,7 @@ s = PermissionsGetter('127.0.0.1', 'MyPc', 'MyUsername', 'MyPassword', 'MyDomain
 s.get_permissions('share', 'file.txt')
 ```
 Example output:
-```
+```bash
 Owner:  Home
 Group:  Domain Users
 Dacl's: Guest:(R):(W)(X)
@@ -45,7 +45,7 @@ Dacl's: Guest:(R):(W)(X)
 ```
 
 ### To set permissions
-``` { .python }
+```python
 from pyicacls.setter import PermissionsSetter
 s = PermissionsSetter('127.0.0.1', 'MyPc', 'MyUsername', 'MyPassword', 'MyDomain')
 
@@ -56,7 +56,7 @@ The output for this operation will be bool - whether the operation succeeded or 
 
 ### To remove permissions
 Simply pass `None` for the `permissions` parameter of the `set_permissions` function.
-```
+```python
 s.set_permissions('share', 'file.txt', 'Guest', None)
 ```
 This will remove all permissions of the user ```Guest```.
